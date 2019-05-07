@@ -7,7 +7,7 @@
 
 [build]
   base    = "docs"
-  command = "make"
+  command = "hugo build"
   publish = "docs/public"
 
 
