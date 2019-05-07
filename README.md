@@ -1,11 +1,10 @@
-# My Python Notes
-
-
+# My Notes for Python
 
 ## About
 
-This is the source of my notes for Python. You can see the web site generated from the notes (the Jupyter notebooks) [here](https://liao961120.github.io/pynote).
+This is where I write my notes for Python.
 
+Each page of this web site is generated from a Jupyter notebook. You can find the source of these notes at [liao961120/pynote](https://github.com/liao961120/pynote)
 
 ## Build the Site
 
@@ -21,16 +20,13 @@ or more simply, just run:
 bash build.sh
 ```
 
-Note that in order to create yaml frontmatter (for Jekyll) in the markdown documents generated from the Jupyter notebooks, each Jupyter notebook begins with a raw block with yaml frontmatter written in it:
+Note that in order to create yaml frontmatter (for Hugo) in the markdown documents generated from the Jupyter notebooks, each Jupyter notebook begins with a raw block with yaml frontmatter written in it:
 
 ```yaml
 ---
-layout: page
-title: Overview
-navigation: 1
+title: Configuration
+weight: 5
+chapter: true
 ---
 ```
 
-## Theme
-
-The theme of the web site is a minimal Jekyll documentation theme, created by [alexander-heimbuch/millidocs](https://github.com/alexander-heimbuch/millidocs). I really like this theme because of its simplicity (the flat `.md` structure).

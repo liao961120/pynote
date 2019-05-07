@@ -1,0 +1,30 @@
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Hugo Learn Documentation"
+theme = "hugo-theme-learn"
+themesdir = "."
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= false
+
+[params]
+  description = "Python Notes"
+  author = "Yongfu Liao"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = false
+  disableLanguageSwitchingButton = true
+  themeVariant = "blue"
+  #editURL = "https://github.com/liao961120/pynote/edit/master/"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/liao961120/pynote"
+weight = 10
+
