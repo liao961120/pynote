@@ -2,7 +2,7 @@
 
 ## About
 
-This is where I write my notes for Python.
+This is where I write my notes for Python. A web site is generated from the notes here, which can be found at <https://pynote.netlify.com>
 
 Each page of this web site is generated from a Jupyter notebook. You can find the source of these notes at [liao961120/pynote](https://github.com/liao961120/pynote)
 
@@ -30,3 +30,6 @@ chapter: true
 ---
 ```
 
+## Web Site Theme
+
+The theme of the web site is copied from <https://github.com/matcornic/hugo-theme-learn>
