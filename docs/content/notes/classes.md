@@ -1,7 +1,6 @@
 ---
 title: Classes
 weight: 5
-chapter: true
 ---
 
 ## Class, Object, Instance/Static Variables
