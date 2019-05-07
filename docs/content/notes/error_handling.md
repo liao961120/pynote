@@ -131,19 +131,12 @@ def fun(a, b):
 
 
 ```python
-fun(10, "k")
+x = fun(10, "k")
 ```
 
     === Try block ===
     === Except block 2 ===
     ValueError encountered, check input of b
-
-
-
-
-
-    2
-
 
 
 If you some code **must be run** after the try-except blocks, a better way is to use the `finally` block.
@@ -174,20 +167,13 @@ def fun(a, b):
 
 
 ```python
-fun(10, "k")
+x = fun(10, "k")
 ```
 
     === Try block ===
     === Except block 2 ===
     ValueError encountered, check input of b
     This is always printed
-
-
-
-
-
-    2
-
 
 
 ## Raising Exception
@@ -208,15 +194,15 @@ fun(1.5)
 ```
 
 
-    -------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
 
-    Exception                               Traceback (most recent call last)
+    Exception                                 Traceback (most recent call last)
 
-    <ipython-input-35-0dd1cabf5a55> in <module>
+    <ipython-input-40-0dd1cabf5a55> in <module>
     ----> 1 fun(1.5)
     
 
-    <ipython-input-31-98ccab9d5d44> in fun(prob)
+    <ipython-input-39-98ccab9d5d44> in fun(prob)
           1 def fun(prob):
           2     if not 0 <= prob <= 1:
     ----> 3         raise Exception("InvalidProb")
@@ -242,15 +228,8 @@ def safeFun(prob):
 
 
 ```python
-safeFun(1.5)
+x = safeFun(1.5)
 ```
 
     Exception encountered: InvalidProb
-
-
-
-
-
-    0
-
 

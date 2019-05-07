@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Python Notes"
+title = "Yongfu's Python Notes"
 theme = "hugo-theme-learn"
 themesdir = "."
 metaDataFormat = "yaml"
@@ -12,7 +12,7 @@ defaultContentLanguageInSubdir= false
   description = "Yongfu's notes for Python"
   author = "Yongfu Liao"
   showVisitedLinks = false
-  disableBreadcrumb = true
+  disableBreadcrumb = false
   disableNextPrev = true
   disableLanguageSwitchingButton = true
   themeVariant = "blue"
