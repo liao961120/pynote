@@ -1,3 +1,8 @@
+---
+layout: page
+title: Classes
+navigation: 50
+---
 
 ## Class, Object, Instance/Static Variables
 

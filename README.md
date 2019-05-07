@@ -1,14 +1,11 @@
----
-layout: page
-title: Overview
-navigation: 1
----
+# My Python Notes
+
+
 
 ## About
 
-This is where I write my notes for Python.
+This is the source of my notes for Python. You can see the web site generated from the notes (the Jupyter notebooks) [here](https://liao961120.github.io/pynote).
 
-Each page of this web site is generated from a Jupyter notebook. You can find the source of these notes at [liao961120/pynote](https://github.com/liao961120/pynote)
 
 ## Build the Site
 

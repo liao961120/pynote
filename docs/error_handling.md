@@ -1,3 +1,8 @@
+---
+layout: page
+title: Error Handling
+navigation: 50
+---
 
 ## Try, Except, Finally
 
