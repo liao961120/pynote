@@ -23,6 +23,12 @@ home = [ "HTML", "RSS", "JSON"]
 
 
 [[menu.shortcuts]]
+name = "<i class='fas fa-blog'></i> Blog"
+identifier = "blog"
+url = "https://liao961120.github.io"
+weight = 9
+
+[[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Github repo"
 identifier = "ds"
 url = "https://github.com/liao961120/pynote"
