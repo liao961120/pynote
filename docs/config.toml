@@ -2,14 +2,14 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation"
+title = "Python Notes"
 theme = "hugo-theme-learn"
 themesdir = "."
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= false
 
 [params]
-  description = "Python Notes"
+  description = "Yongfu's notes for Python"
   author = "Yongfu Liao"
   showVisitedLinks = false
   disableBreadcrumb = false
