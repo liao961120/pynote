@@ -23,7 +23,7 @@
 
 # Top-level page
 - title: Home
-  url: /intro
+  url: /index
   not_numbered: true
 
 # Adds a searchbar link
@@ -47,6 +47,10 @@
 # A chapter w/ a collection of sections beneath it
 - title: Classes
   url: /classes
+  not_numbered: false
+  expand_sections: true
+- title: Error Handling
+  url: /error_handling
   not_numbered: false
   expand_sections: true
 #  sections:
