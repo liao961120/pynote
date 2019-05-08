@@ -30,13 +30,6 @@
 - title: Search
   search: true
 
-# External link
-- title: GitHub repository
-  url: https://github.com/liao961120/pynote
-  external: true
-  not_numbered: true
-
-
 
 # Divider for meta-pages and content page
 - divider: true
@@ -45,6 +38,7 @@
 #- header: My Notes
 
 # A chapter w/ a collection of sections beneath it
+- header: Chapters
 - title: Classes
   url: /classes
   not_numbered: false
@@ -60,3 +54,11 @@
 #  - title: Jupyter notebooks
 #    url: /features/notebooks
 #    not_numbered: true
+
+
+- divider: true
+# External link
+- title: GitHub
+  url: https://github.com/liao961120/pynote
+  external: true
+  not_numbered: true

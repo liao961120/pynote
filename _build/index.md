@@ -1,3 +1,13 @@
+---
+title: 'Home'
+prev_page:
+  url: 
+  title: ''
+next_page:
+  url: /classes
+  title: 'Classes'
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
 # My Notes for Python
 
 <img src="https://travis-ci.org/liao961120/pynote.svg?branch=master" class="left">
