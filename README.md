@@ -4,9 +4,7 @@
 
 ## About
 
-This is where I write my notes for Python, which is served at a [web site](https://pynote.netlify.com)
-
-The notes are written with Jupyter notebooks and converted to a web site by [jupyter-book](https://jupyter.org/jupyter-book).
+This is where I write my notes for Python. The notes are written with Jupyter notebooks and converted to a [web site](https://pynote.netlify.com) by [jupyter-book](https://jupyter.org/jupyter-book).
 
 ## Build the Site
 
