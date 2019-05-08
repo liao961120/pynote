@@ -6,6 +6,11 @@
 
 This is where I put my notes for Python. The notes are written with Jupyter notebooks and converted to a web site by [jupyter-book](https://jupyter.org/jupyter-book).
 
+
+## Writing Notes
+
+After putting one notebook in `content/`, remember to add TOC information in `_data/toc.yml`.
+
 ## Build the Site
 
 The web site is built with the following commands: 
