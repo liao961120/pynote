@@ -22,8 +22,8 @@ email: liao961120@gmail.com
 description: >-
   This is my Python notes, written with Jupyter notebooks & built with jupyter-book.
 
-baseurl: /pynote               # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
-url: https://liao961120.github.io    # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /              # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+url: https://pynote.netlify.com    # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #######################################################################################
