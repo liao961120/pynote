@@ -3,17 +3,14 @@ python:
   - "3.6"
 dist: xenial
 sudo: false
-# command to install dependencies
 
-#virtualenv:
-#  system_site_packages: true
 branches:
   only:
     - master
 
 install:
   - pip install jupyter-book
-  - pip install -r requirements.txt
+
 # command to run tests
 script:
   - make clean
@@ -21,9 +18,7 @@ script:
 
 cache:
   pip: true
-#  directories:
-#    - $HOME/.ccache  # https://github.com/travis-ci/travis-ci/issues/5853
-#    - $HOME/.cache/matplotlib
+
 
 deploy:
   provider: pages
