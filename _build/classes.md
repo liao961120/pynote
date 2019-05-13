@@ -3,17 +3,15 @@ interact_link: content/classes.ipynb
 kernel_name: python3
 title: 'Classes'
 prev_page:
-  url: /https://github.com/liao961120/pynote
-  title: 'GitHub repository'
+  url: /index
+  title: 'Home'
 next_page:
-  url: 
-  title: ''
-title: Classes
-
-weight: 5
-
+  url: /error_handling
+  title: 'Error Handling'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+
+# Classes
 
 ## Class, Object, Instance/Static Variables
 
@@ -21,7 +19,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 {:.input_area}
 ```python
-class Date:
+class Date():
     pass
 
 # Declare object `d` with class `Date`
@@ -38,7 +36,7 @@ print(d.day)
 
 {:.output .output_stream}
 ```
-<__main__.Date object at 0x7f70c45df160>
+<__main__.Date object at 0x7f13e8190438>
 7
 
 ```
@@ -58,7 +56,7 @@ print(d.day)
 
 {:.input_area}
 ```python
-class Date:
+class Date():
     ############ Static (Belong to Class) ############
     # Static variable
     doubleDigit = True
@@ -118,7 +116,7 @@ print(d.isLeap(), d.isValidDate())
 
 {:.output .output_stream}
 ```
-2019/5/7
+2019/05/07
 2019/5/7
 False True
 

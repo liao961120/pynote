@@ -10,12 +10,10 @@ prev_page:
 next_page:
   url: /https://github.com/liao961120/pynote
   title: 'GitHub'
-title: Error Handling
-
-weight: 5
-
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+
+# Error Handling
 
 ## Try, Except, Finally
 
