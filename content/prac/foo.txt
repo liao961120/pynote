@@ -1,0 +1,6 @@
+1. This is file foo.
+2. Just for demo, no practical utilities.
+3. hahahah
+4. This is line 4
+
+6. Line 5 (previous line) is empty

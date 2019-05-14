@@ -164,3 +164,66 @@ div.output_subarea {
 .jp-OutputPrompt {
   display: none;
 }
+
+
+/* Auto numbering*/
+
+body {
+counter-reset : h1;
+	}
+
+h1 {
+counter-reset : h2;
+border-bottom: 1px solid;
+	}
+
+h2 {
+counter-reset : h3;
+	}
+
+h3 {
+counter-reset : h4;
+	}
+
+h4 {
+counter-reset : h5;
+	}
+
+h5 {
+counter-reset : h6;
+	}
+
+main h1:before {
+content : counter(h1,decimal) "\00a0 \00a0 ";
+border-bottom: 3px solid;
+counter-increment : h1;
+	}
+
+main h2:before {
+content : counter(h1,decimal) "." counter(h2,decimal) "\00a0 \00a0 ";
+counter-increment : h2;
+	}
+
+main h3:before {
+content : counter(h1,decimal) "." counter(h2,decimal) "." counter(h3,decimal) "\00a0 \00a0 ";
+counter-increment : h3;
+	}
+
+main h4:before {
+content : counter(h1,decimal) "." counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "\00a0 \00a0 ";
+counter-increment : h4;
+	}
+
+main h5:before {
+content : counter(h1,decimal) "." counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) "\00a0 \00a0 ";
+counter-increment : h5;
+	}
+
+
+
+h1.nocount:before, h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+content : "";
+counter-increment : none;
+	}
+
+

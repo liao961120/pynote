@@ -4,8 +4,8 @@ prev_page:
   url: 
   title: ''
 next_page:
-  url: /classes
-  title: 'Classes'
+  url: /file_io
+  title: 'File I/O'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # My Notes for Python

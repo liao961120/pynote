@@ -3,8 +3,8 @@ interact_link: content/classes.ipynb
 kernel_name: python3
 title: 'Classes'
 prev_page:
-  url: /index
-  title: 'Home'
+  url: /file_io
+  title: 'File I/O'
 next_page:
   url: /error_handling
   title: 'Error Handling'

@@ -39,6 +39,10 @@
 
 # A chapter w/ a collection of sections beneath it
 - header: Chapters
+- title: File I/O
+  url: /file_io
+  not_numbered: false
+  expand_sections: true
 - title: Classes
   url: /classes
   not_numbered: false
