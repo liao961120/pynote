@@ -1,6 +1,7 @@
 ---
 interact_link: content/classes.ipynb
 kernel_name: python3
+has_widgets: false
 title: 'Classes'
 prev_page:
   url: /file_io
@@ -136,3 +137,13 @@ print(d2.isValidDate())
 False
 
 ```
+
+## Advanced Topics
+
+### Magic Methods
+
+- `__init__`, `__str__`, `__eq__`, `__lt__`, `__gt__`, `__add__`
+
+### Protected Attributes, getter & setters
+
+<https://medium.com/bryanyang0528/python-setter-和-getter-6c08a9d37d46>

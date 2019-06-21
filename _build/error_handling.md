@@ -3,13 +3,14 @@ redirect_from:
   - "/error-handling"
 interact_link: content/error_handling.ipynb
 kernel_name: python3
+has_widgets: false
 title: 'Error Handling'
 prev_page:
   url: /classes
   title: 'Classes'
 next_page:
-  url: /https://github.com/liao961120/pynote
-  title: 'GitHub'
+  url: /requests
+  title: 'Requests Data from the Web'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
