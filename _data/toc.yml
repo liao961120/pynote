@@ -59,6 +59,10 @@
   url: /numpy
   not_numbered: false
   expand_sections: true
+- title: Django
+  url: /django
+  not_numbered: false
+  expand_sections: true
 #  sections:
 #  - title: Markdown files
 #    url: /features/markdown
