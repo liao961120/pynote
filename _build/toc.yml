@@ -51,8 +51,16 @@
   url: /error_handling
   not_numbered: false
   expand_sections: true
-- title: Requests Data from the Web
+- title: Request Data from the Web
   url: /requests
+  not_numbered: false
+  expand_sections: true
+- title: Numpy
+  url: /numpy
+  not_numbered: false
+  expand_sections: true
+- title: Django
+  url: /django
   not_numbered: false
   expand_sections: true
 #  sections:

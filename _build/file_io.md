@@ -112,6 +112,122 @@ writelines('prac/writelines.txt', ['This is line 1', 'This is line 2', 3, 4, [1,
 ```
 
 
+## JSON
+
+### Read JSON
+
+#### Read from file
+
+
+
+{:.input_area}
+```python
+import json
+
+with open("prac/dcard_forums.json") as f:
+    data = json.load(f)
+
+print(len(data))
+data[0:2]
+```
+
+
+{:.output .output_stream}
+```
+373
+
+```
+
+
+
+
+{:.output .output_data_text}
+```
+[{'alias': 'midnightlab',
+  'availableLayouts': ['classic'],
+  'canPost': False,
+  'canUseNickname': True,
+  'createdAt': '2016-05-14T19:15:15.698Z',
+  'description': '午夜實驗室10/6、10/7即將在華山登場！這裏提供大家交流活動資訊與討論，請大家要遵守 Dcard 板規喔！',
+  'fullyAnonymous': False,
+  'id': '7f125e07-4460-4ea5-80b5-33f0e9aafa0c',
+  'ignorePost': False,
+  'invisible': True,
+  'isSchool': False,
+  'limitCountries': [],
+  'limitStage': 0,
+  'mediaThreshold': {},
+  'name': '午夜實驗室',
+  'nsfw': False,
+  'postCount': {'last30Days': 0},
+  'postThumbnail': {'size': 'small'},
+  'read': False,
+  'shouldCategorized': False,
+  'subcategories': [],
+  'subscribed': False,
+  'subscriptionCount': 1837,
+  'titlePlaceholder': '',
+  'topics': ['午夜實驗室'],
+  'updatedAt': '2018-11-05T03:24:32.914Z'},
+ {'alias': 'timecapsule',
+  'availableLayouts': ['classic'],
+  'canPost': False,
+  'canUseNickname': True,
+  'createdAt': '2016-05-14T20:15:15.698Z',
+  'description': '寫下你的新年新希望，一年後將收到「時光膠囊」，幫助你檢視這一年達成了多少目標，實現了多少願望！',
+  'fullyAnonymous': False,
+  'id': 'c0ed3f99-ed1c-49a8-b413-ed5e925aafe4',
+  'ignorePost': True,
+  'invisible': True,
+  'isSchool': False,
+  'limitCountries': [],
+  'limitStage': 0,
+  'mediaThreshold': {},
+  'name': '時光膠囊',
+  'nsfw': False,
+  'postCount': {'last30Days': 0},
+  'postThumbnail': {'size': 'small'},
+  'read': False,
+  'shouldCategorized': False,
+  'subcategories': [],
+  'subscribed': False,
+  'subscriptionCount': 2202,
+  'titlePlaceholder': '',
+  'topics': [],
+  'updatedAt': '2019-01-03T16:02:02.892Z'}]
+```
+
+
+
+#### Read from string
+
+
+
+{:.input_area}
+```python
+jsonData = """
+{"a":1,
+"b":2,
+"c":3,
+"d":4,
+"e":5}
+"""
+
+data = json.loads(jsonData)
+data
+```
+
+
+
+
+
+{:.output .output_data_text}
+```
+{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+```
+
+
+
 ## CSV
 
 ### Read: `DictReader`

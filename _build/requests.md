@@ -2,13 +2,13 @@
 interact_link: content/requests.ipynb
 kernel_name: python3
 has_widgets: false
-title: 'Requests Data from the Web'
+title: 'Request Data from the Web'
 prev_page:
   url: /error_handling
   title: 'Error Handling'
 next_page:
-  url: https://github.com/liao961120/pynote
-  title: 'GitHub'
+  url: /numpy
+  title: 'Numpy'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 

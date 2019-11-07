@@ -10,7 +10,7 @@ prev_page:
   title: 'Classes'
 next_page:
   url: /requests
-  title: 'Requests Data from the Web'
+  title: 'Request Data from the Web'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
