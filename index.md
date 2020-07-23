@@ -9,22 +9,18 @@ This is where I put my notes for Python. The notes are written with Jupyter note
 
 ## Writing Notes
 
-After putting one notebook in `content/`, remember to add TOC information in `_data/toc.yml`.
+After putting one notebook in `nb/`, remember to add TOC information in `_toc.yml`.
+
 
 ## Build the Site
 
-The web site is built with the following commands: 
+The web site is built with the following command: 
 
 ```bash
-make clean
-make book
+jupyter-book build ./
 ```
 
-After the web site is built, it can be served with Jekyll:
+which generates the web site in `_build/html/`
 
-```bash
-jekyll build
-# jekyll serve  # locally
-```
 
 I use netlify and Travis-CI to build the web site for me.
