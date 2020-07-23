@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Django &#8212; Python Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/mystnb.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Numpy" href="numpy.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python Notes</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   My Notes for Python
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_io.html">
+   Reading &amp; Writing Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="classes.html">
+   Classes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="error_handling.html">
+   Error Handling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="requests.html">
+   Requests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="numpy.html">
+   Numpy
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Django
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/nb/django.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> On this page
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-directory-structure">
+   Project Directory Structure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#common-commands">
+   Common Commands
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#settings-py">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     settings.py
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#urls-py">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     urls.py
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="django">
+<h1>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://cs50.harvard.edu/web/2019/spring/notes/7/">Course notes</a></p>
+<div class="section" id="project-directory-structure">
+<h2>Project Directory Structure<a class="headerlink" href="#project-directory-structure" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>To start a Django project, enter the command below in terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># django-admin startproject &lt;project-name&gt;</span>
+django-admin startproject project_name
+</pre></div>
+</div>
+</li>
+<li><p>To create an app, cd to the project root (<code class="docutils literal notranslate"><span class="pre">project_name/</span></code> in this case) and run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># python manage.py startapp &lt;app-name&gt;</span>
+python manage.py startapp app1
+</pre></div>
+</div>
+</li>
+</ol>
+<p>This creates the directory stucture below:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span>project_name/
+├── project_name/    # website App: project-level configurations
+│   ├── __init__.py
+│   ├── settings.py  # Link Apps: INSTALLED_APPS
+│   ├── urls.py      # Link apps&#39; routes to main site 
+│   └── wsgi.py
+│ 
+├── app1/
+│   ├── migrations/
+│   ├── templates/
+│   │   └── app1/
+│   │       ├── base.html
+│   │       └── index.html
+│   ├── static/
+│   │       └── style.css
+│   ├── __init__.py
+│   ├── admin.py     # Customize administrator panel
+│   ├── apps.py
+│   ├── tests.py
+│   ├── models.py    # app database definition
+│   ├── urls.py      # app route
+│   └── views.py     # app functions
+│
+├── manage.py
+└── db.sqlite3
+</pre></div>
+</div>
+</div>
+<div class="section" id="common-commands">
+<h2>Common Commands<a class="headerlink" href="#common-commands" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Start new Django project</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>django-admin startproject &lt;project-name&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Add new app</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python manage.py startapp &lt;app-name&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Start server</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python manage.py runserver
+</pre></div>
+</div>
+</li>
+<li><p>Update database (after modifying <code class="docutils literal notranslate"><span class="pre">&lt;app-name&gt;/models.py</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python manage.py makemigrations
+python manage.py migrate
+</pre></div>
+</div>
+</li>
+<li><p>Django shell</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python manage.py shell
+python manage.py shell &lt; script.py
+</pre></div>
+</div>
+</li>
+<li><p>Create super user account</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python manage.py createsuperuser
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="settings-py">
+<h2><code class="docutils literal notranslate"><span class="pre">settings.py</span></code><a class="headerlink" href="#settings-py" title="Permalink to this headline">¶</a></h2>
+<p>Every time a new app is created, remember to attach this new app to the project. To do this, find <code class="docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code> in <code class="docutils literal notranslate"><span class="pre">project_name/settings.py</span></code> and add the app to the list:</p>
+</div>
+<div class="section" id="urls-py">
+<h2><code class="docutils literal notranslate"><span class="pre">urls.py</span></code><a class="headerlink" href="#urls-py" title="Permalink to this headline">¶</a></h2>
+<p>Every app has one <code class="docutils literal notranslate"><span class="pre">urls.py</span></code> and <code class="docutils literal notranslate"><span class="pre">project_name/</span></code> has one <code class="docutils literal notranslate"><span class="pre">urls.py</span></code>. <code class="docutils literal notranslate"><span class="pre">project_name/urls.py</span></code> defines the url relations of every app to the site. <code class="docutils literal notranslate"><span class="pre">&lt;app-name&gt;/urls.py</span></code> defines the relations between individual functions in <code class="docutils literal notranslate"><span class="pre">&lt;app-name&gt;/views.py</span></code> and url paths <strong>within</strong> an app.</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">project_name/urls.py</span></code> might look like the code below, where <code class="docutils literal notranslate"><span class="pre">flights</span></code>, <code class="docutils literal notranslate"><span class="pre">users</span></code> and <code class="docutils literal notranslate"><span class="pre">admin</span></code> (default Django app) are apps in the project:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;flights/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;flights.urls&#39;</span><span class="p">)),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;users/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;users.urls&#39;</span><span class="p">)),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">flights/urls.py</span></code> may look like the code below:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">views</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&lt;int:flight_id&gt;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">flight</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;flight&#39;</span><span class="p">),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&lt;int:flight_id&gt;/book&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">book</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;book&#39;</span><span class="p">)</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">path</span></code> functions essentially links the functions in <code class="docutils literal notranslate"><span class="pre">views.py</span></code> and url paths together in an app.</p>
+<p>As an example, (after running the server locally) if you visit <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:8000/flights/1/book</span></code>, you will be on a page handled by the function <code class="docutils literal notranslate"><span class="pre">book()</span></code> defined in <code class="docutils literal notranslate"><span class="pre">flights/views.py</span></code>. This relationship is defined in <code class="docutils literal notranslate"><span class="pre">path('&lt;int:flight_id&gt;/book',</span> <span class="pre">views.book,</span> <span class="pre">name='book')</span></code>. The path right after the base url (<code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:8000/</span></code>) is <code class="docutils literal notranslate"><span class="pre">flights/</span></code> because it was defined in <code class="docutils literal notranslate"><span class="pre">path('flights/',</span> <span class="pre">include('flights.urls')),</span></code> in <code class="docutils literal notranslate"><span class="pre">project_name/urls.py</span></code>.</p>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="numpy.html" title="previous page">Numpy</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Yongfu Liao<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

@@ -13,9 +13,7 @@ install:
 
 # command to run tests
 script:
-  - make clean
-  - jupyter-book upgrade /home/travis/build/liao961120/pynote
-  - make book
+  - jupyter-book build ./
 
 cache:
   pip: true

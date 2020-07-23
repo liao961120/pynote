@@ -1,0 +1,12 @@
+- file: index
+- file: nb/file_io
+- file: nb/classes
+- file: nb/error_handling
+- file: nb/requests
+- file: nb/numpy
+- file: nb/django
+
+# - file: nb/file_io
+#  sections:
+#    - file: markdown
+#    - file: notebooks

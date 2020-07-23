@@ -1,6 +1,0 @@
-This is line 1
-This is line 2
-3
-4
-[1, 2, '3']
-{'a': 1, 'x': 2}
