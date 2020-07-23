@@ -183,8 +183,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#build-the-site">
-   Build the Site
+  <a class="reference internal nav-link" href="#publishing-the-site">
+   Publishing the Site
   </a>
  </li>
 </ul>
@@ -206,21 +206,16 @@
 </div>
 <div class="section" id="writing-notes">
 <h2>Writing Notes<a class="headerlink" href="#writing-notes" title="Permalink to this headline">¶</a></h2>
-<p>After putting one notebook in <code class="docutils literal notranslate"><span class="pre">content/</span></code>, remember to add TOC information in <code class="docutils literal notranslate"><span class="pre">_data/toc.yml</span></code>.</p>
+<p>After putting one notebook in <code class="docutils literal notranslate"><span class="pre">nb/</span></code>, remember to add TOC information in <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>.</p>
 </div>
-<div class="section" id="build-the-site">
-<h2>Build the Site<a class="headerlink" href="#build-the-site" title="Permalink to this headline">¶</a></h2>
-<p>The web site is built with the following commands:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make clean
-make book
+<div class="section" id="publishing-the-site">
+<h2>Publishing the Site<a class="headerlink" href="#publishing-the-site" title="Permalink to this headline">¶</a></h2>
+<p>Simply run the bash script <code class="docutils literal notranslate"><span class="pre">deploy.sh</span></code> to update the site on GitHub.</p>
+<p>To build the web site without publishing, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build ./
 </pre></div>
 </div>
-<p>After the web site is built, it can be served with Jekyll:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jekyll build
-<span class="c1"># jekyll serve  # locally</span>
-</pre></div>
-</div>
-<p>I use netlify and Travis-CI to build the web site for me.</p>
+<p>which generates the web site in <code class="docutils literal notranslate"><span class="pre">_build/html/</span></code>.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
