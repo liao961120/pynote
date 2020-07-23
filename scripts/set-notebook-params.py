@@ -4,7 +4,7 @@ from nbparameterise import extract_parameters, parameter_values, replace_definit
 
 
 # Extract parameters in source notebook
-with open("src.ipynb") as f:
+with open("source.ipynb") as f:
 	nb = nbformat.read(f, as_version=4)
 orig_parameters = extract_parameters(nb)
 
