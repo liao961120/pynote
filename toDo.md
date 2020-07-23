@@ -1,17 +1,3 @@
-pandas
-	- matplotlib default setup
-		- figsize
-		- chinese font
-	- plot 
-		- hist, bar
-		- subplots
-	- df.at[num, colname]
-	- subsetting
-		- df.select_dtypes
-		- df[COLNAMES]
-		- df.iloc[position, position]
-
-
 networkx utility
 
 

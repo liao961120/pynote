@@ -101,8 +101,6 @@ df[['a', 'b']].plot.hist(subplots=True, layout=(1,2), figsize=(10, 4))
 
 df.plot.bar(x='text', y='b', rot=55) 
 
-df.plot.bar(x='text', y='b', )
-
 ## Miscellaneous
 
 df.corr()
