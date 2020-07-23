@@ -42,7 +42,7 @@ Specify parameters in the first cell of the source jupyter notebook (`source.ipy
 
 You can then use [nbparameterise](https://github.com/takluyver/nbparameterise) to programmatically replace input values in a notebook before running it.
 
-```{admonition} [set-notebook-params.py](https://github.com/liao961120/pynote/scripts/set-notebook-params.py)
+```{admonition} [set-notebook-params.py](https://github.com/liao961120/pynote/blob/master/scripts/set-notebook-params.py)
 :class: dropdown
 
 ````python
@@ -52,7 +52,7 @@ from nbparameterise import extract_parameters, parameter_values, replace_definit
 
 
 # Extract parameters in source notebook
-with open("src.ipynb") as f:
+with open("source.ipynb") as f:
 	nb = nbformat.read(f, as_version=4)
 orig_parameters = extract_parameters(nb)
 

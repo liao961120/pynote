@@ -236,14 +236,14 @@
 <p><img alt="" src="../_images/param-in-notebook.png" /></p>
 <p>You can then use <a class="reference external" href="https://github.com/takluyver/nbparameterise">nbparameterise</a> to programmatically replace input values in a notebook before running it.</p>
 <div class="dropdown admonition">
-<p class="admonition-title"><a class="reference external" href="https://github.com/liao961120/pynote/scripts/set-notebook-params.py">set-notebook-params.py</a></p>
+<p class="admonition-title"><a class="reference external" href="https://github.com/liao961120/pynote/blob/master/scripts/set-notebook-params.py">set-notebook-params.py</a></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">nbformat</span>
 <span class="kn">from</span> <span class="nn">nbparameterise</span> <span class="kn">import</span> <span class="n">extract_parameters</span><span class="p">,</span> <span class="n">parameter_values</span><span class="p">,</span> <span class="n">replace_definitions</span>
 
 
 <span class="c1"># Extract parameters in source notebook</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;src.ipynb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;source.ipynb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 	<span class="n">nb</span> <span class="o">=</span> <span class="n">nbformat</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">as_version</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">orig_parameters</span> <span class="o">=</span> <span class="n">extract_parameters</span><span class="p">(</span><span class="n">nb</span><span class="p">)</span>
 
