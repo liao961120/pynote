@@ -31,7 +31,7 @@
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Django" href="django.html" />
+    <link rel="next" title="Pandas" href="pandas.html" />
     <link rel="prev" title="Requests" href="requests.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,17 +67,12 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../index.html">
-   My Notes for Python
-  </a>
- </li>
-</ul>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1">
   <a class="reference internal" href="file_io.html">
    Reading &amp; Writing Files
   </a>
  </li>
+</ul>
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="classes.html">
    Classes
@@ -96,6 +91,16 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Numpy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pandas.html">
+   Pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter.html">
+   Jupyter Notebook
   </a>
  </li>
  <li class="toctree-l1">
@@ -279,7 +284,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>array([[4.64865392e-310, 0.00000000e+000],
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>array([[4.64967835e-310, 0.00000000e+000],
        [0.00000000e+000, 0.00000000e+000],
        [0.00000000e+000, 0.00000000e+000]])
 </pre></div>
@@ -338,29 +343,29 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0.8044046412587091
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0.1243342257052763
 
-[[0.35663068 0.04382829 0.51400304 0.19868616 0.82561855]
- [0.31908896 0.16408177 0.61707217 0.17163794 0.83773409]
- [0.02188989 0.36837988 0.23965196 0.68671309 0.53995031]]
+[[0.37067402 0.52523751 0.64556949 0.20251635 0.31186591]
+ [0.76393491 0.71054838 0.38912143 0.41679623 0.58198636]
+ [0.2743352  0.02532827 0.82378454 0.84843088 0.3390712 ]]
 
-[[[0.02414265]
-  [0.52839045]
-  [0.09091356]
-  [0.33753627]
-  [0.25199168]]
+[[[0.98378478]
+  [0.29438406]
+  [0.23131775]
+  [0.84617288]
+  [0.38511699]]
 
- [[0.28554   ]
-  [0.49879236]
-  [0.21020143]
-  [0.63964898]
-  [0.23716885]]
+ [[0.13675279]
+  [0.75574176]
+  [0.15372809]
+  [0.73705805]
+  [0.73187824]]
 
- [[0.73758609]
-  [0.71804112]
-  [0.91377519]
-  [0.20588106]
-  [0.43152845]]]
+ [[0.10777166]
+  [0.34323938]
+  [0.66599043]
+  [0.58093256]
+  [0.27132764]]]
 </pre></div>
 </div>
 </div>
@@ -590,7 +595,7 @@ True
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fc148d37b50&gt;
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7feae949bf10&gt;
 </pre></div>
 </div>
 <img alt="../_images/numpy_25_1.png" src="../_images/numpy_25_1.png" />
@@ -678,7 +683,7 @@ True
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fc146f2f950&gt;
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7feae7c1db50&gt;
 </pre></div>
 </div>
 <img alt="../_images/numpy_29_1.png" src="../_images/numpy_29_1.png" />
@@ -696,7 +701,7 @@ True
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fc146ea1950&gt;
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7feae7b8ecd0&gt;
 </pre></div>
 </div>
 <img alt="../_images/numpy_31_1.png" src="../_images/numpy_31_1.png" />
@@ -711,7 +716,7 @@ True
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fc146e13790&gt;
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7feae7b01b10&gt;
 </pre></div>
 </div>
 <img alt="../_images/numpy_32_1.png" src="../_images/numpy_32_1.png" />
@@ -731,7 +736,7 @@ True
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="requests.html" title="previous page">Requests</a>
-    <a class='right-next' id="next-link" href="django.html" title="next page">Django</a>
+    <a class='right-next' id="next-link" href="pandas.html" title="next page">Pandas</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

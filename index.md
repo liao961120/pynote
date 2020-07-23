@@ -1,7 +1,5 @@
 # My Notes for Python
 
-<img src="https://travis-ci.org/liao961120/pynote.svg?branch=master" class="left">
-
 
 ## About
 

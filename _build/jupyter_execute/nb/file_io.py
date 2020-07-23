@@ -117,3 +117,18 @@ json_str = df.iloc[:2,:].to_json(orient="records", force_ascii=False)
 json_str
 
 json.loads(json_str)
+
+
+```{toctree}
+:hidden:
+:titlesonly:
+
+
+classes
+error_handling
+requests
+numpy
+pandas
+jupyter
+django
+```
